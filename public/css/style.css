@@ -1,0 +1,170 @@
+/* navbar css*/
+/* Estilo para la barra de navegación */
+.navbar {
+    background-color: #0a141d; /* Color de fondo personalizado */
+}
+
+/* Estilo para el texto de la marca */
+.navbar-brand {
+    color: #fff; /* Color del texto */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+}
+.navbar-brand:hover {
+    color: #1b4f83; /* Color del texto */
+}
+.nav-link{
+    color: #fff; /* Color del texto */
+    font-size: 1rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+}
+/* Estilo para los enlaces de navegación al pasar el cursor */
+.nav-link:hover {
+    color: #1b4f83; /* Color del texto al pasar el cursor */
+}
+.dropdown-toggle {
+    color: #fff; /* Color del texto */
+    font-size: 1.3rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    margin-right: 15px; /* Espaciado entre enlaces */
+}
+.nav-link{
+    color: #fff; /* Color del texto */
+    font-size: 1.3rem; /* Tamaño del texto */
+    font-weight: bold; /* Grosor del texto */
+    margin-right: 15px; /* Espaciado entre enlaces */
+}
+/* ------------------------------------------------------------------------- */
+
+/* css AUTENTICACION  */
+/* Cambiar el color de fondo del cuerpo */
+body {
+    background-color: #0d2033; /* Color de fondo claro */
+}
+
+/* Personalizar la tarjeta del login */
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+.card-header {
+    border-bottom: none;
+    font-size: 1.5rem;
+    background-color: #0d2033; 
+    color: white; 
+}
+
+/* Personalizar los botones */
+.btn-primary {
+    background-color: #0d2033; /* Color de fondo inicial */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1b4f83; /* Color de fondo al pasar el cursor */
+}
+
+.form-check-input:checked {
+    background-color: #0d2033; /* Color de fondo del checkbox cuando está marcado */
+    border-color: #1b4f83; /* Color del borde del checkbox cuando está marcado */
+}
+.btn-link {
+    color: #0d2033;
+}
+.btn-link:hover{
+    color: #1b4f83;
+}
+/* final */
+/* --------------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Carousel*/
+ /* Estilos para el carousel */
+ #carouselExampleCaptions {
+    max-width: 1000px; /* Ajustar el ancho máximo del carousel */
+    margin: 0 auto; /* Centrar el carousel horizontalmente */
+}
+
+/* Estilos para las imágenes dentro del carousel */
+#carouselExampleCaptions img {
+    max-width: 100%; /* Ajustar el ancho máximo de las imágenes */
+
+    height: auto; /* Permitir que la altura se ajuste automáticamente */
+}
+/*:::::Pie de Pagina*/
+.text-center{
+    margin-top: 50px; /* Agrega un margen superior de 10px */
+}
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+    margin-top: 50px; /* Agrega un margen superior de 10px */
+    padding: 20px;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 5px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 200px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 15px 0px;
+    }
+}
